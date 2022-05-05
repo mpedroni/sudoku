@@ -243,7 +243,7 @@ func (s *Sudoku) HasColorlessNode() bool {
 }
 
 func clear() {
-	fmt.Printf("\x1bc")
+	fmt.Print("\x1bc")
 }
 
 func GetBoardDimensions() int {
@@ -289,7 +289,7 @@ func GetCmd() string {
 	var cmd string
 	fmt.Println("Digite \"q\" para sair ou \"r\" para jogar novamente.")
 	fmt.Print(">> ")
-	fmt.Scanf("%s", &cmd)
+	fmt.Scan(&cmd)
 
 	if strings.ToLower(cmd) == "q" {
 		return "quit"
