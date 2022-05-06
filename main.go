@@ -179,7 +179,7 @@ func (s *Sudoku) Print() {
 
 		for j := 0; j < s.n; j++ {
 			if j == 0 {
-				fmt.Printf("%s  ", s.nodeToString(i+1))
+				fmt.Printf("%s   ", s.nodeToString(i+1))
 			} else if j%s.nSqrt == 0 {
 
 				fmt.Printf("  ")
@@ -193,9 +193,9 @@ func (s *Sudoku) Print() {
 
 func (s *Sudoku) printHorizontalRuler() {
 	if s.n < 10 {
-		fmt.Print("//")
+		fmt.Print("// ")
 	} else {
-		fmt.Print("///")
+		fmt.Print("/// ")
 
 	}
 	for j := 0; j < s.n; j++ {
@@ -206,7 +206,7 @@ func (s *Sudoku) printHorizontalRuler() {
 		fmt.Printf(" %s", s.nodeToString(j+1))
 
 	}
-	fmt.Print("\n/")
+	fmt.Print("\n/\n/")
 }
 
 func (s *Sudoku) nodeToString(node int) string {
