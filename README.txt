@@ -1,4 +1,4 @@
-* Resolução do jogo Sudoku utilizando algoritmo coloração de grafos
+* Resolução do jogo Sudoku utilizando algoritmo de coloração de grafos
 
 Universidade do Vale do Itajaí
 Aluno: Matheus Pedroni
